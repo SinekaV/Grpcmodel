@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option go_package ="https://github.com/SinekaV/Grpcmodel";
+
+package customer;
+
+service CustomerService{
+    rpc CreateCustomer(CustomerRequest) returns (CustomerResponse);
+}
+message CustomerRequest {
+    int64 CustomerId=1;
+    string Firstname=2;
+    string Lastname =3;
+    int64 BankId = 4;
+    int64 Balance=5;
+    string CreatedAt =6;
+    string UpdatesAt =7;
+    bool IsActive=8;
+}
+message CustomerResponse {
+    int64 CustomerId=1;
+    string CreatedAt=2;
+}
