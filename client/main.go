@@ -24,9 +24,9 @@ func main() {
 	
 
 	response, err := client.CreateCustomer(context.Background(), &pb.CustomerRequest{
-		CustomerId: 320,
-		Firstname:  "Jsri",
-		Lastname:   "R",
+		CustomerId: 321,
+		Firstname:  "Sineka",
+		Lastname:   "V",
 		BankId:     12345,
 		Balance:    100000,
 	})
